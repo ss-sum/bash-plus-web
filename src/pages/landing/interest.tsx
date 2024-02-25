@@ -1,6 +1,20 @@
 import Header from "@/components/common/Header";
+import {
+  CheckboxFormButton,
+  CheckboxReactHookFormMultiple,
+  CheckboxReactHookFormSingle,
+} from "@/components/interest/FormGroup";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormItem,
+  FormLabel,
+} from "@/components/ui/form";
 import { pretendard } from "@/lib/fonts";
+import Link from "next/link";
 
 const Interest = () => {
   return (
@@ -18,25 +32,7 @@ const Interest = () => {
         </section>
 
         <section>
-          <h3 className="text-2xl font-bold text-center">개발 분야</h3>
-
-          <div className="grid grid-cols-2 gap-2 mt-4">
-            <Button variant="outline">프론트엔드</Button>
-            <Button variant="outline">백엔드</Button>
-            <Button variant="outline">데브옵스</Button>
-            <Button variant="outline">QA</Button>
-            <Button variant="outline">디자인</Button>
-            <Button variant="outline">기획</Button>
-            <Button variant="outline">데이터 분석</Button>
-            <Button variant="outline">AI/머신러닝</Button>
-          </div>
-        </section>
-
-        <section className="flex max-w-xl mx-auto gap-2">
-          <Button variant="outline" className="w-full">
-            다음에 설정하기
-          </Button>
-          <Button className="w-full">선택 완료</Button>
+          <CheckboxReactHookFormMultiple />
         </section>
       </main>
     </>
