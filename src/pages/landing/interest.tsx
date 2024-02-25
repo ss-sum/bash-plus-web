@@ -1,20 +1,6 @@
 import Header from "@/components/common/Header";
-import {
-  CheckboxFormButton,
-  CheckboxReactHookFormMultiple,
-  CheckboxReactHookFormSingle,
-} from "@/components/interest/FormGroup";
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormItem,
-  FormLabel,
-} from "@/components/ui/form";
+import { CheckboxReactHookFormMultiple } from "@/components/interest/FormGroup";
 import { pretendard } from "@/lib/fonts";
-import Link from "next/link";
 
 const Interest = () => {
   return (
