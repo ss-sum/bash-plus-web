@@ -3,6 +3,7 @@ import VideoBasic from "@/components/card/VideoBasic";
 import Header from "@/components/common/Header";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import Head from "next/head";
+import Link from "next/link";
 
 const VideoId = () => {
   return (
@@ -44,7 +45,11 @@ const VideoId = () => {
           <div className="flex flex-1 flex-col gap-12">
             <div>
               <h3 className="text-xl font-bold mb-4">
-                <span className="text-purple-900 font-bold">TOSS SLASH 23</span>{" "}
+                <Link href="/conference/1" className="hover:underline">
+                  <span className="text-purple-900 font-bold">
+                    TOSS SLASH 23
+                  </span>
+                </Link>{" "}
                 의 다른 영상 살펴보기
               </h3>
 
@@ -56,7 +61,7 @@ const VideoId = () => {
               </div>
             </div>
 
-            <div>
+            <div className="bg-gray-100 p-8 rounded-lg">
               <h3 className="text-xl font-bold mb-4">댓글</h3>
 
               <div className="min-h-[500px]"></div>
