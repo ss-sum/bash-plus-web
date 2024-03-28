@@ -3,7 +3,7 @@
   예시) [BP-250] 아주 멋진 UI 작업
 -->
 
-# JIRA Ticket
+## JIRA Ticket
 
 <!--
   JIRA 티켓 번호를 입력해주세요
@@ -12,12 +12,12 @@
 
 [JIRA Ticket #](https://ss-sum.atlassian.net/browse/BP-)
 
-# Description
+## Description
 
 <!-- Pull Request의 내용에 대해 이해하기 쉽게 설명해주세요. 작업한 부분의 이미지를 캡쳐하거나 영상을 첨부하면 리뷰어에게 큰 도움이 됩니다. -->
 
 
-# Checklists
+## Checklists
 
 <!-- 아래 체크리스트를 모두 수행한 뒤 Pull Request를 등록해주세요. -->
 
