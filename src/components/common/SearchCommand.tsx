@@ -1,3 +1,4 @@
+
 import {
   CommandDialog,
   CommandEmpty,
@@ -6,7 +7,7 @@ import {
   CommandItem,
   CommandList,
 } from "../ui/command";
-
+import Link from "next/link";
 const SearchCommand = ({
   open,
   setOpen,
@@ -20,9 +21,13 @@ const SearchCommand = ({
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Suggestions">
-          <CommandItem>Calendar</CommandItem>
-          <CommandItem>Search Emoji</CommandItem>
-          <CommandItem>Calculator</CommandItem>
+          <CommandItem>
+            <Link href={`/searchResult/1`}>
+              Calendar
+              </Link>
+              </CommandItem>
+          <CommandItem>        <Link href={`/searchResult/2`}>Search Emoji</Link></CommandItem>
+          <CommandItem> <Link href={`/searchResult/3`}>Calculator</Link></CommandItem>
         </CommandGroup>
       </CommandList>
     </CommandDialog>
