@@ -1,6 +1,5 @@
 import VideoBasic from "@/components/card/VideoBasic";
 import Header from "@/components/common/Header";
-import { Badge } from "@/components/ui/badge";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,7 +11,14 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-const searchResults = [
+type SearchResult = {
+    id: number;
+    title: string;
+    description: string;
+    tags: string[];
+  };
+  
+  const searchResults: SearchResult[] = [
     { id: 1, title: "React 개발의 기초", description: "React의 기본을 배워봅시다.", tags: ["React", "Frontend"] },
     { id: 2, title: "Next.js로 SSR 적용하기", description: "Next.js를 이용해서 서버 사이드 랜더링을 구현하는 방법.", tags: ["Next.js", "SSR"] },
     { id: 3, title: "React 개발의 기초", description: "React의 기본을 배워봅시다.", tags: ["React", "Frontend"] },
@@ -21,10 +27,7 @@ const searchResults = [
     { id: 6, title: "Next.js로 SSR 적용하기", description: "Next.js를 이용해서 서버 사이드 랜더링을 구현하는 방법.", tags: ["Next.js", "SSR"] },
     
     
-    
-    
-    // 추가 검색 결과 데이터 ...
-];
+  ]
 
 
 const searchResultId = () => {
@@ -116,9 +119,6 @@ const searchResultId = () => {
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
            
                 </NavigationMenuLink>
-                    
-                
-              
 </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
